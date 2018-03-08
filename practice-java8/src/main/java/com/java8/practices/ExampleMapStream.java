@@ -1,9 +1,6 @@
 package com.java8.practices;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ExampleMapStream {
@@ -39,5 +36,14 @@ public class ExampleMapStream {
         });
 
 
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6);
+        int result=0;
+        for(int i=0; i < numbers.size(); i++){
+
+            if(numbers.get(i)%2 == 0){
+                result += numbers.get(i) * 2;
+            }
+        }
+        System.out.println(result);
     }
 }
