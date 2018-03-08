@@ -1,5 +1,5 @@
-*/*.iml
 */target
+*/*.iml
 /*.idea
 .idea
 target/
