@@ -54,7 +54,7 @@ public class ReverseString {
         for(int x=0;x<inputArray.length;x++){
             if(inputArray[x]==' '){
                 int nextSpace = this.foundNextSpace(inputArray,x+1)-1;
-                for(x=x+1;x<nextSpace;x++,nextSpace--){
+                for(x=x+1;x<nextSpace+1/2;x++,nextSpace--){
                     char tmp = inputArray[x];
                     inputArray[x] = inputArray[nextSpace];
                     inputArray[nextSpace] = tmp;
