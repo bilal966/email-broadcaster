@@ -1,5 +1,8 @@
 package com.java8.practices;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -45,5 +48,11 @@ public class ExampleMapStream {
             }
         }
         System.out.println(result);
+    }
+
+    private void test() throws NullPointerException,IOException {
+        File abc = new File("");
+        abc.getCanonicalFile();
+
     }
 }
